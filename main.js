@@ -128,8 +128,6 @@ function main() {
             console.log(`::set-output name=build_number::${nextBuildNumber}`);
             //Save to file so it can be used for next jobs...
             fs.writeFileSync('BUILD_NUMBER', nextBuildNumber.toString());
-            }
-
         });
     });
 }
